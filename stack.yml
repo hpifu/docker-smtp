@@ -14,7 +14,8 @@ services:
     environment:
       - RELAY_NETWORKS= :0.0.0.0/0
     networks:
-      - smtpnet
+      - online
 networks:
-  smtpnet:
-    name: smtpnet
+  online:
+    external: true
+    name: online
